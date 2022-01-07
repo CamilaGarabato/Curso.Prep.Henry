@@ -3,18 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  devolverPrimerElement [0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  devolverPrimerElemento [devolverPrimerElemento.length - 1 ];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return obtenerLargoDelArray.length;
 }
 
 
@@ -23,6 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var lista = []
+  for(var i = 0; i < lista.length; i = i + 1);
+  console.log(lista[i]);
 }
 
 
@@ -30,6 +36,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+var agregar = ["Tor", "Loky", "Cami"]
+   agregar.push("elemento");
+   console.log(agregar)
 }
 
 
@@ -38,6 +47,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  agregarItemAlComienzoDelArray.unshift("elemnto"); 
 }
 
 
@@ -47,6 +57,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  console.log(dePalabrasAFrase.join(", "));
 }
 
 
