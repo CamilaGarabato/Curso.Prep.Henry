@@ -7,9 +7,9 @@ function crearUsuario() {
   // El `contructor` debe tener un método llamado "saludar" en su `prototype` que devuelva una string 'Hola, mi nombre es {{nombre}}'
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
-  // Tu código:
+  // Tu código: ESTO ES METODO CONSTRUCTORA
   class Usuario {  //con mayuscula para que JS entienda que es una fx construcctora
-    constructor (opciones) {  //podria ser cualquier cosa pero el ejercicio dice "opciones"
+    constructor (opciones) {  //=> esto es un OBJETO asi lo dice el ejercicio ,,,podria ser cualquier cosa pero el ejercicio dice "opciones"
       this.usuario = opciones.usuario;  //een la fx contructora simepre usamos this
       this.nombre = opciones.nombre; //con opciones le decimos que busque en la fx constructora 
       this.email = opciones.email;//le damos el valor de nuestro objeto opciones
@@ -24,7 +24,10 @@ function crearUsuario() {
     return "Hola, mi nombre es " + this.nombre;
   };
   return Usuario;
-}
+}//aqui lo que haces es agregar una funcion a la clase ususario.
+//cunado poner function y pones en Mayuscula js interpreta que es una funcion constructora
+//function Usuuario (opciones) {
+//     this.nombre = opciones.nombre   y asi... 
 
 function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
@@ -94,7 +97,7 @@ function agregarStringInvertida() {
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
-  //Devolver la nueva persona creada
+  //Devolver la nueva persona creada  si por ejejmplo te olvidas de poner un metodo a la clase le agregas de esta forma
   const persona1 = new Persona("Juan", "Perez", 22, "saavedra 123");
   return persona1
 }
